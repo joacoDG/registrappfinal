@@ -1,0 +1,97 @@
+{
+  "estudiantes": [
+    {
+      "id": 1,
+      "nombre": "Juan Pérez",
+      "correo": "juan.perez@example.com",
+      "contrasena": "password123",
+      "telefono": "123456789",
+      "edad": 20,
+      "asignaturas": ["Matemáticas", "Programación"]
+    },
+    {
+      "id": 2,
+      "nombre": "María López",
+      "correo": "maria.lopez@example.com",
+      "contrasena": "securepass",
+      "telefono": "987654321",
+      "edad": 22,
+      "asignaturas": ["Física", "Bases de Datos"]
+    },
+    {
+      "id": 3,
+      "nombre": "Pedro Gómez",
+      "correo": "pedro.gomez@example.com",
+      "contrasena": "pedro2023",
+      "telefono": "567123890",
+      "edad": 21,
+      "asignaturas": ["Matemáticas", "Física"]
+    },
+    {
+      "id": 4,
+      "nombre": "Ana Martínez",
+      "correo": "ana.martinez@example.com",
+      "contrasena": "anapass",
+      "telefono": "321654987",
+      "edad": 23,
+      "asignaturas": ["Programación", "Bases de Datos"]
+    },
+    {
+      "id": 5,
+      "nombre": "Luis Torres",
+      "correo": "luis.torres@example.com",
+      "contrasena": "torres1234",
+      "telefono": "789456123",
+      "edad": 19,
+      "asignaturas": ["Matemáticas", "Bases de Datos"]
+    }
+  ],
+  "profesores": [
+    {
+      "id": 1,
+      "nombre": "Carlos Ramírez",
+      "correo": "carlos.ramirez@example.com",
+      "contrasena": "teach123",
+      "telefono": "555123456",
+      "edad": 35,
+      "asignatura_presentar": "Matemáticas"
+    },
+    {
+      "id": 2,
+      "nombre": "Laura Fernández",
+      "correo": "laura.fernandez@example.com",
+      "contrasena": "prof456",
+      "telefono": "555987654",
+      "edad": 40,
+      "asignatura_presentar": "Bases de Datos"
+    },
+    {
+      "id": 3,
+      "nombre": "José Castillo",
+      "correo": "jose.castillo@example.com",
+      "contrasena": "teach789",
+      "telefono": "555678123",
+      "edad": 45,
+      "asignatura_presentar": "Física"
+    },
+    {
+      "id": 4,
+      "nombre": "Sofía Morales",
+      "correo": "sofia.morales@example.com",
+      "contrasena": "teach456",
+      "telefono": "555321987",
+      "edad": 38,
+      "asignatura_presentar": "Programación"
+    }
+  ],
+  "administradores": [
+    {
+      "correo": "admin1@example.com",
+      "contrasena": "adminpass1"
+    },
+    {
+      "correo": "admin2@example.com",
+      "contrasena": "adminpass2"
+    }
+  ]
+}

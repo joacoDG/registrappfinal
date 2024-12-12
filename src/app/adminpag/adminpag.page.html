@@ -1,0 +1,75 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Duoc uc</ion-title>
+    <ion-button slot="end"(click)="logout()">Cerrar sesion</ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ 
+  <ion-card class="ion-text-center" >
+    <img alt="Silhouette of mountains" src="../../assets/img/Logo.webp" />
+    <ion-card-header>
+      <ion-card-title class="ion-text-center"></ion-card-title>
+      <ion-card-title>Programa de aistencia</ion-card-title>
+      <ion-card-title>Pagina de administrador</ion-card-title>
+      <ion-card-subtitle>aqui puede realizar ciertos cambios en los usuarios </ion-card-subtitle>
+      <ion-card-subtitle>y revisar los registros de las asistencias</ion-card-subtitle>
+      <br>
+      <br>
+      <br>
+      <br>
+    </ion-card-header>
+
+
+    <ion-card-content>
+      <br>
+      <br>
+
+      <ion-content class="ion-padding">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Agregar Estudiante</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-item>
+              <ion-label position="floating">Nombre</ion-label>
+              <ion-input [(ngModel)]="nuevoEstudiante.nombre"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Correo</ion-label>
+              <ion-input [(ngModel)]="nuevoEstudiante.correo"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Contraseña</ion-label>
+              <ion-input [(ngModel)]="nuevoEstudiante.contrasena"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Teléfono</ion-label>
+              <ion-input [(ngModel)]="nuevoEstudiante.telefono"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Edad</ion-label>
+              <ion-input type="number" [(ngModel)]="nuevoEstudiante.edad"></ion-input>
+            </ion-item>
+            <ion-button expand="block" (click)="crearEstudiante()">Crear</ion-button>
+          </ion-card-content>
+        </ion-card>
+      
+        <ion-list>
+          <ion-item *ngFor="let estudiante of estudiantes">
+            <ion-label>
+              <h2>{{ estudiante.nombre }}</h2>
+              <p>{{ estudiante.correo }}</p>
+            </ion-label>
+            <ion-button color="primary" slot="end" (click)="editarEstudiante(estudiante)">Editar</ion-button>
+            <ion-button color="danger" slot="end" (click)="eliminarEstudiante(estudiante.id)">Eliminar</ion-button>
+          </ion-item>
+        </ion-list>
+      </ion-content>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+
+
